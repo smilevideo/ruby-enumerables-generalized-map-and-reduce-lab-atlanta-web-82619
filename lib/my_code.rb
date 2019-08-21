@@ -7,5 +7,7 @@ def map (ary)
   return new
 end
 
-def reduce(ary, start = nil)
+def reduce(ary, start = ary[0])
+  val = start
+  
   
