@@ -6,3 +6,6 @@ def map (ary)
   end
   return new
 end
+
+def reduce(ary, start = 0)
+  
