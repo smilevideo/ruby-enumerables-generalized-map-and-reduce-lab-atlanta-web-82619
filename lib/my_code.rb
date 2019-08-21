@@ -11,7 +11,8 @@ def reduce(ary, start = ary[0])
   val = start
   
   ary.each do |value|
-    val = yield val yield value
+    yield val
+    val = yield value 
   end
   return val
 end
