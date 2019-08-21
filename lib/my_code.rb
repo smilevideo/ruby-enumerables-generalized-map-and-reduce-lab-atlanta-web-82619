@@ -10,12 +10,18 @@ end
 def reduce(ary, start = nil)
   if start 
     return_value = start
+    
+    ary.each do |value|
+      return_value = yield(return_value, value)
+    end
   else
     return_value = ary[0]
+    
+    ary.each do |value|
+      return_value = yield(return_value, value)
+    end
   end
 
-  ary.each do |value|
-    return_value = yield(return_value, value)
-  end
+
   return return_value
 end
