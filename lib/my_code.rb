@@ -9,7 +9,7 @@ end
 
 def reduce(ary, start = ary[0])
   return_value = start
-  
+
   ary.each do |value|
     return_value = yield return_value, value
   end
