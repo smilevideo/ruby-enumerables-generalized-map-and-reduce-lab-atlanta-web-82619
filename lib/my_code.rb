@@ -1,4 +1,4 @@
 # Your Code Here
-def map (ary, block)
+def map (ary)
   new = []
   ary.each{|val, index| new
