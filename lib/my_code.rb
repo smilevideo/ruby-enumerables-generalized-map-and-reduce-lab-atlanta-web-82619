@@ -17,7 +17,7 @@ def reduce(ary, start = nil)
   else
     return_value = ary[0]
     
-    ary.each do |value|
+    ary[1..-1].each do |value|
       return_value = yield(return_value, value)
     end
   end
