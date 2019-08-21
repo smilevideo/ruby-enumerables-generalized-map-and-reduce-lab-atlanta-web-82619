@@ -7,7 +7,7 @@ def map (ary)
   return new
 end
 
-def reduce(ary, start = ary[0])
+def reduce(ary, start = 0)
   val = start
   
   ary.each do |value|
