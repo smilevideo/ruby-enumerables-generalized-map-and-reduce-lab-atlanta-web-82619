@@ -7,8 +7,8 @@ def map (ary)
   return new
 end
 
-def reduce(ary, start = 0)
-  val = start
+def reduce(ary, start = ary[0])
+  return_value = start
   
   ary.each do |value|
     yield val
