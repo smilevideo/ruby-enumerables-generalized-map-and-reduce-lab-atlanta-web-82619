@@ -22,6 +22,5 @@ def reduce(ary, start = nil)
     end
   end
 
-
   return return_value
 end
