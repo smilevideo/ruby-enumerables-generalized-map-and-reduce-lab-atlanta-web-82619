@@ -1,2 +1,4 @@
 # Your Code Here
-def map ()
+def map (ary, block)
+  new = []
+  ary.each
